@@ -93,3 +93,41 @@ for (;;) {
   console.log("infinite loop");
   if (i >= 0) break;
 }
+
+/**
+ * Nested Loops
+ */
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 2; j++) {
+    console.log(`i = ${i}, j = ${j}`);
+  }
+}
+
+// matrix traversal
+console.log("--- matrix traversal ---");
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 2; j++) {
+    console.log(`matrix[${i}][${j}]`);
+  }
+}
+
+/**
+ * Labels for break/continue
+ */
+
+console.log("--- Labels for break/continue ---");
+
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 2; j++) {
+    if (i === 1 && j === 1) break outer;
+    console.log(`i = ${i}, j = ${j}`);
+  }
+}
+
+// postfix & prefix
+i = 0;
+while (++i < 5) console.log(i);
+i = 0;
+while (i++ < 5) console.log(i);
