@@ -103,4 +103,56 @@ const userNew = {
 
 console.log(userNew);
 
+/**
+ * Property names Limitations.
+ * There’s a minor gotcha with a special property named __proto__. We can’t set it to a non-object value:
+ */
 
+let obj = {};
+obj.__proto__ = 5; // assign a number
+console.log(obj.__proto__);
+
+/**
+ * Property existence test, “in” operator
+ */
+
+console.log("age" in userData);
+console.log("country" in userData);
+
+/**
+ * For..in loop
+ * The for..in loop is used to iterate over the enumerable properties of an object.
+ */
+
+for (let key in userData) {
+  console.log(key + ": " + userData[key]);
+}
+
+/**
+ * Ordered like an object
+ * Are objects ordered? In other words, if we loop over an object, do we get all properties in the same order they were added? Can we rely on this?
+ * The short answer is: “ordered in a special fashion”: integer properties are sorted, others appear in creation order. The details follow.
+ * As an example, let’s consider an object with the phone codes:
+ */
+
+let codes = {
+  49: "Germany",
+  "+41": "Switzerland",
+  44: "Great Britain",
+  age: 30,
+  name: "Pakistan",
+  1: "USA",
+};
+
+for (let code in codes) {
+  console.log(code); // 1, 41, 44, 49
+}
+
+// return true if obj is empty and false otherwise.
+
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
