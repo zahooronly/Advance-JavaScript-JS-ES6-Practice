@@ -249,3 +249,16 @@ console.log(
     return item * item;
   })
 );
+
+/**
+ * 🔠 Organizing Arrays
+ */
+
+
+// sort()
+
+const sortArr=[1, 30, 4, 21, 100000];
+// const sortArr=[5, 1, 8, 3];
+const newSortArr=sortArr.sort()
+console.log(sortArr)
+console.log(newSortArr)
