@@ -155,3 +155,19 @@ const foundChar = findListChar.find((item) => item[0] == "A");
 
 console.log(findListChar);
 console.log(foundChar);
+
+/**
+ * findIndex()
+ */
+
+const findIndexList = [90, 101, 102];
+const foundIndex = findIndexList.findIndex((item) => item > 100);
+console.log(findIndexList);
+console.log(foundIndex);
+
+const findIndexCharList = ["dog", "cat", "mouse"];
+const foundIndexChar = findIndexCharList.findIndex((item) => item == "cat");
+console.log(findIndexCharList);
+console.log(foundIndexChar);
+
+
