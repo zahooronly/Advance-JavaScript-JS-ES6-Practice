@@ -221,6 +221,14 @@ console.log(arrNew);
  * splice() - Remove or add items at any position
  */
 
-const arrSp=arrS.splice(2,1)
-console.log(arrS)
-console.log(arrSp)
+const arrSp = arrS.splice(2, 1);
+console.log(arrS);
+console.log(arrSp);
+
+/**
+ * fill()
+ */
+
+// const arrF = arrS.fill("CCC");
+// console.log(arrF);
+// console.log(arrS);
