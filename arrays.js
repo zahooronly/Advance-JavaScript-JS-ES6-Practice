@@ -262,3 +262,5 @@ const sortArr=[1, 30, 4, 21, 100000];
 const newSortArr=sortArr.sort()
 console.log(sortArr)
 console.log(newSortArr)
+const newReverseArr=sortArr.reverse()
+console.log(newReverseArr)
