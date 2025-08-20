@@ -232,3 +232,20 @@ console.log(arrSp);
 // const arrF = arrS.fill("CCC");
 // console.log(arrF);
 // console.log(arrS);
+
+/**
+ * flat()
+ */
+
+const flatArr = [1, 2, 3, [4, 5, 6, [7, 8, 9, [10, 11, [12]]]]];
+console.log(flatArr);
+
+console.log(flatArr.flat());
+console.log(flatArr.flat(Infinity));
+
+console.log(flatArr);
+console.log(
+  flatArr.flat(Infinity).flatMap((item) => {
+    return item * item;
+  })
+);
