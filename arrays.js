@@ -197,3 +197,30 @@ const everyCharList = ["Sam", "Sara"];
 const everyCharCheck = everyCharList.every((item) => item.length == 4);
 console.log(everyCharList);
 console.log(everyCharCheck);
+
+/**
+ * Changing Arrays:
+ */
+
+/**
+ * concat() - Join two arrays together
+ */
+
+console.log([1, 2].concat([3, 4]));
+
+/**
+ * slice() - Copy a piece of an array
+ */
+
+const arrS = [1, 2, 3, 4, 5, 6, 7, 8];
+const arrNew = arrS.slice(1, 6);
+console.log(arrS);
+console.log(arrNew);
+
+/**
+ * splice() - Remove or add items at any position
+ */
+
+const arrSp=arrS.splice(2,1)
+console.log(arrS)
+console.log(arrSp)
