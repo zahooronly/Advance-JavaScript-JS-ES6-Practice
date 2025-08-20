@@ -183,3 +183,17 @@ const someCharList = ["apple", "banana", "text"];
 const someCheckList = someCharList.some((item) => item.includes("x"));
 console.log(someCharList);
 console.log(someCheckList);
+
+/**
+ * every() - Check if ALL items pass a test
+ */
+
+const everyList = [2, 4, 6];
+const everyCheck = everyList.every((item) => item % 2 == 0);
+console.log(everyList);
+console.log(everyCheck);
+
+const everyCharList = ["Sam", "Sara"];
+const everyCharCheck = everyCharList.every((item) => item.length == 4);
+console.log(everyCharList);
+console.log(everyCharCheck);
