@@ -150,3 +150,8 @@ const found = findList.find((item) => item % 3 == 0);
 console.log(findList);
 console.log(found);
 
+const findListChar = ["Zara", "Ali", "Tina"];
+const foundChar = findListChar.find((item) => item[0] == "A");
+
+console.log(findListChar);
+console.log(foundChar);
