@@ -170,4 +170,16 @@ const foundIndexChar = findIndexCharList.findIndex((item) => item == "cat");
 console.log(findIndexCharList);
 console.log(foundIndexChar);
 
+/**
+ * some()
+ */
 
+const someList = [80, 55, 35, 90];
+const someCheck = someList.some((item) => item < 40);
+console.log(someList);
+console.log(someCheck);
+
+const someCharList = ["apple", "banana", "text"];
+const someCheckList = someCharList.some((item) => item.includes("x"));
+console.log(someCharList);
+console.log(someCheckList);
